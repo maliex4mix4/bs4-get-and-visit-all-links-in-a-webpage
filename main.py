@@ -12,7 +12,7 @@ def getLinks(url):
     links.append(link.get('href')) #finds all link with attr href
   return links
 #now this is the real deal
-weblink = 'https://en.wikipedia.org/wiki/World_War_II' #
+weblink = 'http://mjmltd.com.ng/' #Link
 links = getLinks(weblink) #remember the function we declared earlier
 countLinks = 0 #this just count links
 for link in links:
@@ -23,6 +23,8 @@ for link in links:
     if 'http://' in link:
       pass
     elif 'https://' in link:
+      pass
+    elif 'www.' in link:
       pass
     else:
       link = weblink+str(link)
